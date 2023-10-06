@@ -12,9 +12,9 @@ Before executing the deploy.yml action, you must create **six** secrets: **CF_AC
 - **CF_ACCOUNT_ID**：After logging into your Cloudflare account，obtain it from the address bar on the dashboard page，e.g., for [https://dash.cloudflare.com/[account id]](https://dash.cloudflare.com), the account id part.
 - **CF_API_TOKEN**： Click on the profile icon in the top right corner, then go to My profile -> API Tokens -> Create Token -> Edit Cloudflare Workers (Use Template) -> Include All accounts (Account Resources) && Include All zones (Zone Resources) -> Continue to summary -> Create Token.
 - **CF_WORKER_NAME**: Name of the deployed worker, e.g., cf_explore_share_001.
-- **YUNZIYUAN_HOST**: Server to get tasks from, must be set to share.sevenkingdoms.eu.org.
+- **YUNZIYUAN_HOST**: Server to get tasks from, must be set to **share.sevenkingdoms.eu.org**.
 - **YUNZIYUAN_TOKEN**: Go to the  [https://share.sevenkingdoms.eu.org](https://share.sevenkingdoms.eu.org/), enter your email address in the keywords field, and press enter. Later, retrieve the token from your email.
-- **YUNZIYUAN_EXPLORER**： This is the email address you provided when obtaining the - YUNZIYUAN_TOKEN.
+- **YUNZIYUAN_EXPLORER**： This is the email address you provided when obtaining the **YUNZIYUAN_TOKEN**.
 
 If you need to deploy multiple workers, please change **CF_WORKER_NAME** before running the deploy.yml action, such as cf_explore_share_002.
 
