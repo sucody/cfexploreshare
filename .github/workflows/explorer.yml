@@ -1,0 +1,16 @@
+name: explorer
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-explorer:
+    name: run explorer
+    runs-on: ubuntu-latest
+    env:
+      YUNZIYUAN_HOST: ${{ secrets.YUNZIYUAN_HOST }}       
+      YUNZIYUAN_EXPLORER: ${{ secrets.YUNZIYUAN_EXPLORER }}    
+      YUNZIYUAN_TOKEN: ${{ secrets.YUNZIYUAN_TOKEN }}             
+    steps:
+      - uses: actions/checkout@v3   
+      - uses: ./
